@@ -1,0 +1,32 @@
+{
+  "name": "use-useless-functions",
+  "version": "1.0.0",
+  "description": "Using useless functions",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rimraf ./lib",
+    "build": "webpack --config ./webpack.config.js --progress --profile --colors",
+    "altBuild": "babel src -d alt",
+    "start": "babel-node server"
+  },
+  "author": "Dan Halverson <daniel.m.halverson@gmail.com> (http://halversondm.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "useless-functions": "1.0.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "express": "^4.13.4",
+    "html-webpack-plugin": "^2.21.0",
+    "rimraf": "^2.5.2",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.10.0"
+  }
+}
