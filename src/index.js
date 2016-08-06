@@ -1,6 +1,8 @@
 "use strict";
 
-import {name, address, Person} from 'useless-functions';
+import {name} from "useless-functions/lib/name";
+import {address} from "useless-functions/lib/address";
+import {Person} from "useless-functions/lib/Person";
 
 const firstName = "Daniel";
 const middleInitial = "M";

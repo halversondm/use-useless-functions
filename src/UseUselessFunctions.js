@@ -3,7 +3,10 @@
  */
 
 import React from 'react';
-import {Comment, Person, name, address} from 'useless-functions';
+import {Comment} from "useless-functions/lib/Comment";
+import {Person} from "useless-functions/lib/Person";
+import {name} from "useless-functions/lib/name";
+import {address} from "useless-functions/lib/address";
 
 var UseUselessFunctions = React.createClass({
   render: function () {
