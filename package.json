@@ -5,8 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "rimraf ./lib",
-    "build": "webpack --config ./webpack.config.js --progress --profile --colors",
+    "prebuild": "rimraf lib",
+    "build": "webpack --config webpack.config.js --progress --profile --colors",
     "altBuild": "babel src -d alt",
     "start": "babel-node server"
   },
